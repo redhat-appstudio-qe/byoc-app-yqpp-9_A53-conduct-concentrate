@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rtbd
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-ddnl-tenant/byoc-app-yqpp/rtbd@sha256:13378fedae163b70d20ee819b8510a69371cc87681f4b7bd43331e4d42f7368a
         name: my-java-quarkus
         ports:
         - containerPort: 8081
