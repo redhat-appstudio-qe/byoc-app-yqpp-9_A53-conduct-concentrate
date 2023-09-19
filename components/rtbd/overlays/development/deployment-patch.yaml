@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rtbd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-ddnl-tenant/byoc-app-yqpp/rtbd@sha256:13378fedae163b70d20ee819b8510a69371cc87681f4b7bd43331e4d42f7368a
+        name: my-java-quarkus
+        resources: {}
+status: {}
